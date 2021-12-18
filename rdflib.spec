@@ -5,7 +5,7 @@
 %define keepstatic 1
 Name     : rdflib
 Version  : 6.0.2
-Release  : 303
+Release  : 304
 URL      : file:///aot/build/clearlinux/packages/rdflib/rdflib-v6.0.2.tar.gz
 Source0  : file:///aot/build/clearlinux/packages/rdflib/rdflib-v6.0.2.tar.gz
 Summary  : No detailed summary available
@@ -14,6 +14,12 @@ License  : GPL-2.0
 Requires: rdflib-bin = %{version}-%{release}
 Requires: rdflib-python = %{version}-%{release}
 Requires: rdflib-python3 = %{version}-%{release}
+Requires: expat-dev
+Requires: expat-staticdev
+Requires: pypi(html5lib)
+Requires: pypi(importlib_metadata)
+Requires: pypi(isodate)
+Requires: pypi(pyparsing)
 BuildRequires : expat-dev
 BuildRequires : expat-staticdev
 BuildRequires : pypi(html5lib)
@@ -64,7 +70,7 @@ unset https_proxy
 unset no_proxy
 export SSL_CERT_FILE=/var/cache/ca-certs/anchors/ca-certificates.crt
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1639845579
+export SOURCE_DATE_EPOCH=1639845800
 export GCC_IGNORE_WERROR=1
 ## altflags1 content
 ## altflags1
