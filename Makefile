@@ -1,5 +1,5 @@
 PKG_NAME := rdflib
-URL = https://pypi.org/project/pyelftools/
+URL = https://github.com/RDFLib/rdflib.git
 ARCHIVES = 
 ARCHIVES_GIT = 
 
